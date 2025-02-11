@@ -32,21 +32,26 @@
             height: 80vh;
             padding: 20px;
         }
+
         .info-box {
             width: 25%;
             padding: 20px;
-            background-color: hsl(293, 86%, 71%, 0.3);
+            background-color: rgba(255, 255, 255, 0.4);
             border-radius: 10px;
             margin-right: 20px;
             text-align: center;
+            color: black;
         }
+
         .carousel-container {
             width: 70%;
             position: relative;
         }
+
         .carousel-item {
             text-align: center;
         }
+
         .carousel-item img {
             max-width: 100%;
             height: auto;
@@ -55,32 +60,56 @@
             object-fit: contain;
             margin: auto;
         }
+
         .product-text {
             font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 10px;
             color: black;
         }
+
         .product-description {
-            background-color: hsl(293, 86%, 71%, 0.3);
+            background-color: rgba(255, 255, 255, 0.4);
             padding: 10px;
             border-radius: 10px;
             width: 80%;
-            color: rgb(0, 0, 0);
+            color: black;
             margin: 10px auto;
+            position: relative;
         }
+
+        .order-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #E663B3;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-button:hover {
+            background-color: #D154A6;
+        }
+
         .carousel-control-prev, .carousel-control-next {
             width: 10%;
             opacity: 1;
         }
+
         .carousel-control-prev-icon, .carousel-control-next-icon {
             background-color: rgba(0, 0, 0, 0.5);
             border-radius: 50%;
             padding: 10px;
         }
+
         .carousel-inner {
             display: flex;
         }
+
         .carousel-item {
             flex: 0 0 100%;
             transition: transform 0.5s ease-in-out;
@@ -88,49 +117,59 @@
     </style>
 </head>
 <body>
-    <div class="banner">Happy Birthday Chiara</div>
-    
-    <div class="main-container">
-        <div class="info-box">
-            <h2>Events and Experiences</h2>
-            <p>Happy Birthday Chiara! Discover the best Chris with top-tier features and quality.</p>
-        </div>
+    <body>
+        <div class="banner">Happy Birthday Chiara</div>
         
-        <div class="carousel-container">
-            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="product-text">Amazing Event 1</div>
-                        <a href="product1.html">
-                            <img src="img1.png"alt="Product 1">
-                        </a>
-                        <div class="product-description">This is an incredible thing with Chris and other friends that you will (probably) like!!!</div>
+        <div class="main-container">
+            <div class="info-box">
+                <h2>Events and Experiences</h2>
+                <p>Happy Birthday Chiara! Discover the best Chris with top-tier features and quality.</p>
+            </div>
+            
+            <div class="carousel-container">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="product-text">Amazing Event 1</div>
+                            <a href="product1.html">
+                                <img src="img1.png" alt="Product 1">
+                            </a>
+                            <div class="product-description">
+                                This is a thing with Chris and friends that you like!!!
+                                <a href="order1.html" class="order-button">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="product-text">Amazing Event 2</div>
+                            <a href="product2.html">
+                                <img src="img2.png" alt="Product 2">
+                            </a>
+                            <div class="product-description">
+                                Experience the next level of innovation with Product 2.
+                                <a href="order2.html" class="order-button">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="product-text">Amazing Event 3</div>
+                            <a href="product3.html">
+                                <img src="img3.png" alt="Product 3">
+                            </a>
+                            <div class="product-description">
+                                Product 3 offers top-tier performance and style.
+                                <a href="order3.html" class="order-button">Order Now</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="product-text">Amazing Event 2</div>
-                        <a href="product2.html">
-                            <img src="img2.png" alt="Product 2">
-                        </a>
-                        <div class="product-description">Experience the next level of innovation with Product 2.</div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="product-text">Amazing Event 3</div>
-                        <a href="product3.html">
-                            <img src="img3.png" alt="Product 3">
-                        </a>
-                        <div class="product-description">Product 3 offers top-tier performance and style.</div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
             </div>
         </div>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
